@@ -1,0 +1,183 @@
+*{
+   margin : 0;
+   padding : 0;
+}
+
+ol{
+   list-style-type: none;
+}
+
+nav{
+   /* border : 3px solid red; */
+   display: flex;
+   background-image: linear-gradient(90deg,orange, #808000) ;
+   /* background-color: orange; */
+   color: white;
+}
+
+#navbar_option{
+   display: flex;
+   /* flex-direction: row-reverse; */
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 40px;
+   /* border: 5px solid black; */
+
+   /* display: inline; */
+}
+
+#heading{
+   /* display: inline; */
+
+   /* border: 8px solid green; */
+   width: 100%;
+   padding: 5px;
+   padding-left: 20px;
+
+}
+
+.auto-slider{
+   /* border: 8px solid green; */
+   overflow: hidden;
+   height: 800px;
+   width: 1200px;
+   margin: 50px auto;
+}
+
+
+@-webkit-keyframes slide_animation{
+   0% {left: 0px;}
+   10% {left: 0px;}
+   20% {left: 1200px;}
+   30% {left: 1200px;}
+   40% {left: 2400px;}
+   50% {left: 2400px;}
+   60% {left: 1200px;}
+   70% {left: 1200px;}
+   80% {left: 0px;}
+   90% {left: 0px;}
+   100% {left: 0px;}
+}
+
+.auto-slider__content{
+   width: 3600px;
+   height: 800px;
+   margin: 0 0 0 -2400px;
+   position: relative;
+   -webkit-animation-name: slide_animation;
+   -webkit-animation-duration: 33s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-play-state: running;
+}
+
+.img-container{
+   height: 800px;
+   width: 1200px;
+   position: relative;
+   float: left;
+}
+
+.image{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.menu-image{
+   /* border: 3px solid black; */
+   width: 360px;
+   height: 480px;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   /* display: block; */
+}
+
+.menuimg{
+   width: 100%;
+   height: 25%;
+   margin: 5px auto;
+   object-fit: cover;
+}
+
+.menu-list{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 5px 30px;
+   justify-content: space-around;
+   column-gap: 15px;
+   row-gap: 20px;
+}
+
+.menu-container{
+   /* border: 4px solid black; */
+   width: 1200px;
+   height: 1000px;
+   margin: 20px auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+h4{
+   margin-left: 20px;
+   margin-top: 10px;
+   font-size: larger;
+   font-weight: 600;
+}
+
+/* p{
+   width: 80%;
+   height: 60%;
+   margin : 25px 15px;
+   font-size: large;
+   text-align: justify;
+} */
+
+.form{
+   
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+   margin: 35px auto;
+   width: 60%;
+   height: 520px;
+   border-radius: 10px;
+}
+
+.divform{
+   /* border: 3px solid black; */
+   /* padding: 20px; */
+   padding-left: 50px;
+   /* margin-top: 30px; */
+   
+}
+
+input{
+   width: 40%;
+   height: 25px;
+   /* margin: 10px; */
+   margin-right: 10px;
+}
+
+.formtext{
+   font-weight: 900;
+   font-size :xx-large;
+   /* border: 3px solid black; */
+   width: 92%;
+   height: 20%;
+   background-color: orange;
+   color: #fff;
+   padding: 20px;
+}
+
+button{
+   width: 60%;
+   height: 30px;
+   background-color: orange;
+   color: #fff;
+   border-radius: 5px;
+}
+
+textarea{
+   padding-left: 20px;
+}
